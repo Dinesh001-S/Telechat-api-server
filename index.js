@@ -16,7 +16,7 @@ if (!apiKey) {
 const genAI = new GoogleGenerativeAI(apiKey);
 const generationConfig = { temperature: 0.9, topP: 1, topK: 1, maxOutputTokens: 4096 };
 
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", generationConfig });
+const model = genAI.getGenerativeModel({ model: "gemini-pro", generationConfig });
 
 // Middleware to parse JSON request body
 app.use(express.json());
